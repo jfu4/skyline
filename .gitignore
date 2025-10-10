@@ -1,0 +1,15 @@
+# KiCad backup and autosave files
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*.net
+*.dsn
+*.tmp
+*.xml
+*.zip
+*.tar.gz
+
+# KiCad cache folders
+fp-info-cache
+sym-lib-table
