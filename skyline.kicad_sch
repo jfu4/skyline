@@ -3695,6 +3695,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:SolderJumper_2_Open"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SolderJumper_2_Open"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Solder Jumper, 2-pole, open"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "solder jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SolderJumper*Open*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SolderJumper_2_Open_0_1"
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy -0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.254 -1.016)
+					(mid -1.2656 0)
+					(end -0.254 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.254 1.016)
+					(mid 1.2656 0)
+					(end 0.254 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 1.016) (xy 0.254 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SolderJumper_2_Open_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "LED_Small_1"
 			(pin_numbers
 				(hide yes)
@@ -8147,8 +8333,8 @@
 		(uuid 34ba0242-ea98-4567-9c27-380ca0267a67)
 	)
 	(rectangle
-		(start 139.7 17.78)
-		(end 209.55 64.77)
+		(start 139.7 20.32)
+		(end 222.25 76.2)
 		(stroke
 			(width 0.254)
 			(type default)
@@ -8603,8 +8789,8 @@
 		(uuid bef6ee7a-15dd-409a-865f-4677cc8cb425)
 	)
 	(rectangle
-		(start 214.63 20.32)
-		(end 367.03 90.17)
+		(start 229.87 17.78)
+		(end 382.27 87.63)
 		(stroke
 			(width 0.254)
 			(type default)
@@ -8925,6 +9111,16 @@
 		)
 		(uuid "3583a44f-9cbe-40a5-be02-a397e266f3b7")
 	)
+	(text "JP1-5 For left side\nJP6-10 For right side"
+		(exclude_from_sim no)
+		(at 199.898 59.182 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ef6fc03-1393-4070-b8e4-3214de327997")
+	)
 	(text "D"
 		(exclude_from_sim no)
 		(at 351.79 120.65 0)
@@ -9132,7 +9328,7 @@
 	)
 	(text "Current draw:\n1mA*15=0.15A"
 		(exclude_from_sim no)
-		(at 291.084 24.892 0)
+		(at 306.324 22.352 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9439,7 +9635,7 @@
 	)
 	(text "LCD"
 		(exclude_from_sim no)
-		(at 146.558 22.098 0)
+		(at 147.066 24.638 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -9525,7 +9721,7 @@
 	)
 	(text "resistor value could be\n5k for bom optimization"
 		(exclude_from_sim no)
-		(at 337.82 36.576 0)
+		(at 353.06 34.036 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9583,7 +9779,7 @@
 	)
 	(text "Resistor Value:\n(Vf-Vd)/I\n=(5-3.2)/1mA\n=1.8kohm\n≈1.5kohm (BOM optimization)"
 		(exclude_from_sim no)
-		(at 268.732 27.178 0)
+		(at 283.972 24.638 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9665,7 +9861,7 @@
 	)
 	(text "Default pins for nice view\nCS = D1 / P0.06\nSCL = D2 / 0.20\nMOSI = D3 / P0.17\n"
 		(exclude_from_sim no)
-		(at 177.038 37.846 0)
+		(at 193.548 27.686 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9699,7 +9895,7 @@
 	)
 	(text "White Underglow"
 		(exclude_from_sim no)
-		(at 232.41 24.638 0)
+		(at 247.65 22.098 0)
 		(effects
 			(font
 				(face "KiCad Font")
@@ -9959,7 +10155,7 @@
 		(uuid "029a3c44-dedc-40b0-9858-ed5fdce2e62b")
 	)
 	(junction
-		(at 294.64 55.88)
+		(at 309.88 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02f9492c-535c-470b-9bdd-4d90751a9eaf")
@@ -9977,7 +10173,7 @@
 		(uuid "081b9454-5b28-4846-bcfa-4b148043edf8")
 	)
 	(junction
-		(at 264.16 66.04)
+		(at 279.4 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c1355ca-133e-4a6c-b100-b8d40827569b")
@@ -9989,7 +10185,7 @@
 		(uuid "1472af2b-cdd4-4d8b-b0c4-311a3821fdb9")
 	)
 	(junction
-		(at 284.48 55.88)
+		(at 299.72 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "16e0073b-ea4f-4da1-b076-b9fb206f260b")
@@ -10013,6 +10209,12 @@
 		(uuid "1fa38b1c-9152-47eb-9bfb-f4ad44e20302")
 	)
 	(junction
+		(at 180.34 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2124c9fc-61ae-4316-97e7-fcd1e92da510")
+	)
+	(junction
 		(at 86.36 220.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10025,7 +10227,7 @@
 		(uuid "2285e808-c0a7-4e50-8318-4e1611c770eb")
 	)
 	(junction
-		(at 344.17 67.31)
+		(at 359.41 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25f3b8cc-ccf3-4280-9be1-ab7aa255fd89")
@@ -10067,7 +10269,7 @@
 		(uuid "36149118-0cfb-4a70-ad19-8cd24624ecff")
 	)
 	(junction
-		(at 344.17 49.53)
+		(at 359.41 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "379ca230-786e-48a4-9f5a-2db153173de2")
@@ -10085,7 +10287,7 @@
 		(uuid "39acdca9-48fb-4e2d-8021-a5fbbfdb5e66")
 	)
 	(junction
-		(at 243.84 81.28)
+		(at 259.08 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3a11c81a-4fe2-4240-aa5f-60f5f3d3c69f")
@@ -10109,7 +10311,7 @@
 		(uuid "3bcdcf3d-97d8-4656-b5f5-61d745bd92c0")
 	)
 	(junction
-		(at 243.84 55.88)
+		(at 259.08 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4049e077-02c3-40e0-85b9-282289d65cd7")
@@ -10119,6 +10321,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "40cf3843-5e7e-4c91-b708-a103a06e698a")
+	)
+	(junction
+		(at 53.34 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4435a60d-91f8-496c-91ab-c7031961e760")
 	)
 	(junction
 		(at 252.73 128.27)
@@ -10133,7 +10341,13 @@
 		(uuid "4a2df69b-5f2e-4239-be65-3c42554b721c")
 	)
 	(junction
-		(at 284.48 40.64)
+		(at 45.72 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ac7964a-5928-4d42-bb87-2bdcf1c863d8")
+	)
+	(junction
+		(at 299.72 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4c84ecc5-c026-49e8-a1bc-929de13e86a4")
@@ -10151,7 +10365,7 @@
 		(uuid "551e6e83-52d0-4f2b-b8e6-1c6364cafc03")
 	)
 	(junction
-		(at 254 66.04)
+		(at 269.24 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5be6a05a-1e49-43b6-94bc-106d39dbb67b")
@@ -10163,7 +10377,7 @@
 		(uuid "6681b020-ae22-473a-9690-2027bb5f7847")
 	)
 	(junction
-		(at 284.48 66.04)
+		(at 299.72 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66fa2b50-11f5-40ce-a77d-5ee523531363")
@@ -10175,13 +10389,13 @@
 		(uuid "67e803c3-39a4-4ba4-8da1-d6ef2aa6874e")
 	)
 	(junction
-		(at 294.64 40.64)
+		(at 309.88 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "68d60e6f-dff3-4974-993f-9a0e84228ffa")
 	)
 	(junction
-		(at 264.16 81.28)
+		(at 279.4 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ef053c3-1494-4e10-bd00-8e028a8e7c69")
@@ -10211,13 +10425,13 @@
 		(uuid "7724f8a8-e2bd-4a45-b08d-1ceaefb5435b")
 	)
 	(junction
-		(at 274.32 40.64)
+		(at 289.56 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a22e6f2-e7dc-4f8a-95c9-fedb3e3e5cf5")
 	)
 	(junction
-		(at 264.16 55.88)
+		(at 279.4 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7adf44ad-a6a9-471e-ae4b-a769fdcfb6c6")
@@ -10259,13 +10473,13 @@
 		(uuid "84f23ac4-494f-4414-929a-67886ac1a09d")
 	)
 	(junction
-		(at 274.32 55.88)
+		(at 289.56 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "86c69873-02f8-4881-8e69-2416aca5998c")
 	)
 	(junction
-		(at 284.48 81.28)
+		(at 299.72 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87cfdb5a-dd41-4a77-be8b-9886190172cb")
@@ -10277,7 +10491,7 @@
 		(uuid "89682999-ac0b-4a07-8602-57fc74d50c48")
 	)
 	(junction
-		(at 233.68 66.04)
+		(at 248.92 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8a11d372-2d95-4e46-9675-4fd94ef8dc7c")
@@ -10307,7 +10521,7 @@
 		(uuid "95d91cb1-3b2c-4050-8742-e90af9fd5f3d")
 	)
 	(junction
-		(at 274.32 81.28)
+		(at 289.56 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "96d256b4-86bc-4653-b245-e219c05b87d2")
@@ -10325,7 +10539,7 @@
 		(uuid "993eda91-632f-46ec-908c-8b6a0b67e92b")
 	)
 	(junction
-		(at 254 55.88)
+		(at 269.24 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a7cf666-d2d9-421d-8e85-e9d7aeaec596")
@@ -10343,13 +10557,13 @@
 		(uuid "9e9b5798-1dc6-44e5-b546-ea052baa75c1")
 	)
 	(junction
-		(at 330.2 62.23)
+		(at 345.44 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a32a868c-0e97-4a58-9f32-18535786b929")
 	)
 	(junction
-		(at 254 40.64)
+		(at 269.24 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a421d2b8-c4c0-4b31-859c-b4e7fe678154")
@@ -10373,10 +10587,22 @@
 		(uuid "a8e2340a-5bf7-4eef-b989-1c328787a7c1")
 	)
 	(junction
+		(at 181.61 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9cb8622-9d46-4c15-a5d7-bb4dda5cf5a1")
+	)
+	(junction
 		(at 290.83 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab6bf205-2180-4f0b-b933-4b0ed914706d")
+	)
+	(junction
+		(at 182.88 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac820a9a-3bbd-4e46-a9cd-d1d357c2476e")
 	)
 	(junction
 		(at 228.6 118.11)
@@ -10397,10 +10623,16 @@
 		(uuid "b03e8557-2902-4668-a89a-49306ba8e830")
 	)
 	(junction
-		(at 264.16 40.64)
+		(at 279.4 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0620f07-1be2-460a-a7aa-1997baf00fea")
+	)
+	(junction
+		(at 177.8 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0778302-9491-4838-83fe-c16d7c8de3af")
 	)
 	(junction
 		(at 233.68 146.05)
@@ -10439,7 +10671,7 @@
 		(uuid "c454de88-e3ed-41e9-8c76-db8fc17a73a8")
 	)
 	(junction
-		(at 243.84 66.04)
+		(at 259.08 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c486a3e0-4536-43e1-bb41-5c818879672d")
@@ -10493,7 +10725,7 @@
 		(uuid "d2127f73-2203-4023-b885-8f7c7ba039f8")
 	)
 	(junction
-		(at 274.32 66.04)
+		(at 289.56 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3308a46-1917-4a61-b20c-867b25f4202a")
@@ -10523,7 +10755,7 @@
 		(uuid "da1bb022-cbb0-4527-8e35-ad9a39053cbb")
 	)
 	(junction
-		(at 243.84 40.64)
+		(at 259.08 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dab75ec6-636a-4d59-b45d-73c0c3aaff17")
@@ -10541,13 +10773,19 @@
 		(uuid "dcd41607-404c-467c-a9a2-ed06feb3e3a7")
 	)
 	(junction
-		(at 254 81.28)
+		(at 151.13 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2daf6bd-19b4-4ae9-9fab-5a6e665b1e3c")
+	)
+	(junction
+		(at 269.24 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7cc19d2-6556-4a86-ac4c-d5dc355e4e7e")
 	)
 	(junction
-		(at 149.86 48.26)
+		(at 151.13 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e84822f7-8872-4908-9262-3580a6f6b4ec")
@@ -10571,13 +10809,13 @@
 		(uuid "f1160893-764a-407f-9c00-99bd5bc77254")
 	)
 	(junction
-		(at 344.17 54.61)
+		(at 359.41 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f24eaa9b-7d89-4881-9378-e51dcb9da84b")
 	)
 	(junction
-		(at 233.68 40.64)
+		(at 248.92 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9261664-0447-4e7c-bc63-04f7fe365ef4")
@@ -10588,6 +10826,12 @@
 		(color 0 0 0 0)
 		(uuid "fa848a5e-b14f-4adb-9fe2-7f8b02843103")
 	)
+	(junction
+		(at 179.07 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb7dbdad-6ba3-4c2d-b11b-47e58212ca49")
+	)
 	(no_connect
 		(at 109.22 254)
 		(uuid "0369c2a4-f9a1-4da5-852d-e7d1a130a45c")
@@ -10597,16 +10841,22 @@
 		(uuid "9f727ea1-6a5e-480c-85c6-b8117658c1f8")
 	)
 	(no_connect
-		(at 311.15 71.12)
-		(uuid "abb5a88d-5583-4101-b287-df57e2d9184f")
-	)
-	(no_connect
-		(at 275.59 57.15)
+		(at 290.83 54.61)
 		(uuid "d15fa4f7-a340-472f-af81-c190c11b8c4f")
 	)
 	(no_connect
 		(at 57.15 60.96)
 		(uuid "e611f6ad-fcae-4184-ab23-ed54a28ad728")
+	)
+	(wire
+		(pts
+			(xy 173.99 58.42) (xy 180.34 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0271548b-e7b3-44a9-be07-c1d50df2b5af")
 	)
 	(wire
 		(pts
@@ -10620,6 +10870,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 130.81) (xy 45.72 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "054a8df3-e6a7-453b-ac24-639912421b84")
+	)
+	(wire
+		(pts
 			(xy 73.66 99.06) (xy 73.66 101.6)
 		)
 		(stroke
@@ -10627,6 +10887,16 @@
 			(type default)
 		)
 		(uuid "058fcfbb-2053-4676-97ef-b7320050187f")
+	)
+	(wire
+		(pts
+			(xy 163.83 63.5) (xy 166.37 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "060be55f-ba4f-464e-810a-8a00c610ff43")
 	)
 	(wire
 		(pts
@@ -10680,7 +10950,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 66.04) (xy 254 66.04)
+			(xy 259.08 63.5) (xy 269.24 63.5)
 		)
 		(stroke
 			(width 0)
@@ -10700,6 +10970,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 35.56) (xy 179.07 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bcd1392-5f14-47e1-b79c-78ee5387838f")
+	)
+	(wire
+		(pts
 			(xy 125.73 180.34) (xy 125.73 182.88)
 		)
 		(stroke
@@ -10710,7 +10990,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 40.64) (xy 274.32 40.64)
+			(xy 279.4 38.1) (xy 289.56 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10750,13 +11030,23 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 66.04) (xy 294.64 66.04)
+			(xy 299.72 63.5) (xy 309.88 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "11791452-cf80-47bd-b300-77fbe95f50bb")
+	)
+	(wire
+		(pts
+			(xy 151.13 58.42) (xy 151.13 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13af2101-3ece-4941-aaab-ef06749bb0c1")
 	)
 	(wire
 		(pts
@@ -10767,6 +11057,16 @@
 			(type default)
 		)
 		(uuid "140531b2-0d78-48ab-8d31-60320549ecbf")
+	)
+	(wire
+		(pts
+			(xy 53.34 137.16) (xy 53.34 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "141d1a67-b2ba-4b68-b6c2-2f26b8e69b84")
 	)
 	(wire
 		(pts
@@ -10840,7 +11140,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 66.04) (xy 243.84 66.04)
+			(xy 248.92 63.5) (xy 259.08 63.5)
 		)
 		(stroke
 			(width 0)
@@ -10850,7 +11150,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 45.72) (xy 163.83 45.72)
+			(xy 161.29 35.56) (xy 166.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10890,7 +11190,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 50.8) (xy 162.56 57.15)
+			(xy 165.1 40.64) (xy 165.1 44.45)
 		)
 		(stroke
 			(width 0)
@@ -10920,7 +11220,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 55.88) (xy 284.48 55.88)
+			(xy 289.56 53.34) (xy 299.72 53.34)
 		)
 		(stroke
 			(width 0)
@@ -10937,6 +11237,16 @@
 			(type default)
 		)
 		(uuid "25822151-ec96-477a-9b3e-197605b69261")
+	)
+	(wire
+		(pts
+			(xy 173.99 43.18) (xy 182.88 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f23c0a-d81b-4621-a619-721a28d24e85")
 	)
 	(wire
 		(pts
@@ -11000,7 +11310,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 55.88) (xy 274.32 55.88)
+			(xy 279.4 53.34) (xy 289.56 53.34)
 		)
 		(stroke
 			(width 0)
@@ -11020,7 +11330,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 54.61) (xy 344.17 57.15)
+			(xy 359.41 52.07) (xy 359.41 54.61)
 		)
 		(stroke
 			(width 0)
@@ -11030,7 +11340,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 43.18) (xy 163.83 43.18)
+			(xy 161.29 33.02) (xy 166.37 33.02)
 		)
 		(stroke
 			(width 0)
@@ -11040,7 +11350,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 130.81) (xy 48.26 130.81)
+			(xy 39.37 130.81) (xy 45.72 130.81)
 		)
 		(stroke
 			(width 0)
@@ -11080,7 +11390,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 55.88) (xy 264.16 55.88)
+			(xy 269.24 53.34) (xy 279.4 53.34)
 		)
 		(stroke
 			(width 0)
@@ -11100,7 +11410,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 40.64) (xy 254 40.64)
+			(xy 259.08 38.1) (xy 269.24 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11120,6 +11430,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 38.1) (xy 180.34 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e5adda1-19e6-4824-81d5-05c60e336b48")
+	)
+	(wire
+		(pts
 			(xy 149.86 228.6) (xy 149.86 227.33)
 		)
 		(stroke
@@ -11130,7 +11450,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 62.23) (xy 330.2 62.23)
+			(xy 344.17 59.69) (xy 345.44 59.69)
 		)
 		(stroke
 			(width 0)
@@ -11150,7 +11470,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 40.64) (xy 233.68 40.64)
+			(xy 245.11 38.1) (xy 248.92 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11200,13 +11520,23 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 55.88) (xy 274.32 58.42)
+			(xy 289.56 53.34) (xy 289.56 55.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "469aef68-064d-42c7-9d5b-b514b583db88")
+	)
+	(wire
+		(pts
+			(xy 166.37 40.64) (xy 165.1 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "474444a4-a612-4ce6-be1e-8098b20e7fe0")
 	)
 	(wire
 		(pts
@@ -11240,7 +11570,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 81.28) (xy 294.64 81.28)
+			(xy 299.72 78.74) (xy 309.88 78.74)
 		)
 		(stroke
 			(width 0)
@@ -11260,6 +11590,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 137.16) (xy 53.34 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ccbf719-b609-4e0a-b48a-2ed45e98fb37")
+	)
+	(wire
+		(pts
 			(xy 228.6 110.49) (xy 228.6 118.11)
 		)
 		(stroke
@@ -11270,7 +11610,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 55.88) (xy 243.84 55.88)
+			(xy 248.92 53.34) (xy 259.08 53.34)
 		)
 		(stroke
 			(width 0)
@@ -11360,6 +11700,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 38.1) (xy 180.34 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a52ddf3-de67-4a23-9e7c-84ddf558257d")
+	)
+	(wire
+		(pts
 			(xy 271.78 200.66) (xy 290.83 200.66)
 		)
 		(stroke
@@ -11370,7 +11720,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 48.26) (xy 163.83 48.26)
+			(xy 151.13 38.1) (xy 166.37 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11390,13 +11740,33 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 81.28) (xy 243.84 81.28)
+			(xy 248.92 78.74) (xy 259.08 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f6eb383-06d8-4dda-a9c2-30e353c89bee")
+	)
+	(wire
+		(pts
+			(xy 173.99 33.02) (xy 177.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "603e766b-73b2-4812-ac17-98bc13eabf87")
+	)
+	(wire
+		(pts
+			(xy 151.13 57.15) (xy 151.13 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a6ddc6-9b57-4ee6-b93a-b21ca398751c")
 	)
 	(wire
 		(pts
@@ -11427,6 +11797,16 @@
 			(type default)
 		)
 		(uuid "62714ca2-d427-41e0-8d29-2c94c97431e6")
+	)
+	(wire
+		(pts
+			(xy 173.99 53.34) (xy 177.8 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62eb3530-56a0-457e-a264-3eb614f6b52f")
 	)
 	(wire
 		(pts
@@ -11520,7 +11900,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 40.64) (xy 304.8 40.64)
+			(xy 309.88 38.1) (xy 320.04 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11600,16 +11980,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 57.15) (xy 149.86 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7461c937-176e-4556-bec1-bac0316d9273")
-	)
-	(wire
-		(pts
 			(xy 347.98 195.58) (xy 353.06 195.58)
 		)
 		(stroke
@@ -11630,7 +12000,17 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 49.53) (xy 351.79 49.53)
+			(xy 45.72 130.81) (xy 48.26 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a15dad5-5013-47a7-9373-64b930102ac3")
+	)
+	(wire
+		(pts
+			(xy 359.41 46.99) (xy 367.03 46.99)
 		)
 		(stroke
 			(width 0)
@@ -11740,13 +12120,33 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 81.28) (xy 264.16 83.82)
+			(xy 166.37 55.88) (xy 165.1 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8730abce-c1bc-479f-9bcb-04d84ad2d540")
+	)
+	(wire
+		(pts
+			(xy 279.4 78.74) (xy 279.4 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8766b1fc-b5be-420a-8f43-4618bf76a52c")
+	)
+	(wire
+		(pts
+			(xy 175.26 60.96) (xy 181.61 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a645497-ca6e-40f0-8d22-2da42e89a7b4")
 	)
 	(wire
 		(pts
@@ -11800,7 +12200,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 66.04) (xy 274.32 66.04)
+			(xy 279.4 63.5) (xy 289.56 63.5)
 		)
 		(stroke
 			(width 0)
@@ -11870,6 +12270,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 43.18) (xy 182.88 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a2589b7-e5da-472a-9a63-91c9350c3e50")
+	)
+	(wire
+		(pts
 			(xy 125.73 167.64) (xy 142.24 167.64)
 		)
 		(stroke
@@ -11920,13 +12330,23 @@
 	)
 	(wire
 		(pts
-			(xy 318.77 62.23) (xy 321.31 62.23)
+			(xy 334.01 59.69) (xy 336.55 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9c9def23-dc29-41eb-bf7a-be0737bbdddb")
+	)
+	(wire
+		(pts
+			(xy 181.61 40.64) (xy 173.99 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ca07b61-b7fc-4a2f-bea9-5bd6492e4d66")
 	)
 	(wire
 		(pts
@@ -11950,7 +12370,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 40.64) (xy 264.16 40.64)
+			(xy 269.24 38.1) (xy 279.4 38.1)
 		)
 		(stroke
 			(width 0)
@@ -11990,7 +12410,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 53.34) (xy 163.83 53.34)
+			(xy 161.29 43.18) (xy 166.37 43.18)
 		)
 		(stroke
 			(width 0)
@@ -12030,7 +12450,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 81.28) (xy 274.32 81.28)
+			(xy 279.4 78.74) (xy 289.56 78.74)
 		)
 		(stroke
 			(width 0)
@@ -12050,7 +12470,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 66.04) (xy 284.48 66.04)
+			(xy 289.56 63.5) (xy 299.72 63.5)
 		)
 		(stroke
 			(width 0)
@@ -12070,13 +12490,23 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 55.88) (xy 254 55.88)
+			(xy 259.08 53.34) (xy 269.24 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acb7e1af-3f16-4887-a7e5-93c415e9eee0")
+	)
+	(wire
+		(pts
+			(xy 162.56 60.96) (xy 166.37 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad52689f-04e0-4f92-a81c-88d7797192c5")
 	)
 	(wire
 		(pts
@@ -12120,7 +12550,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 66.04) (xy 233.68 66.04)
+			(xy 245.11 63.5) (xy 248.92 63.5)
 		)
 		(stroke
 			(width 0)
@@ -12140,6 +12570,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 58.42) (xy 166.37 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4a41f74-e269-4aa8-99d0-df3f16145673")
+	)
+	(wire
+		(pts
 			(xy 204.47 128.27) (xy 214.63 128.27)
 		)
 		(stroke
@@ -12150,7 +12590,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 55.88) (xy 304.8 55.88)
+			(xy 309.88 53.34) (xy 320.04 53.34)
 		)
 		(stroke
 			(width 0)
@@ -12160,7 +12600,37 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 59.69) (xy 354.33 59.69)
+			(xy 179.07 55.88) (xy 173.99 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b83268dd-c14e-48cd-a1b9-d5129b351aba")
+	)
+	(wire
+		(pts
+			(xy 151.13 68.58) (xy 151.13 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ad0a9d-382a-4786-9391-2a058dd89e97")
+	)
+	(wire
+		(pts
+			(xy 180.34 38.1) (xy 182.88 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba10ef84-73a8-4c12-bd76-c565d8db88d4")
+	)
+	(wire
+		(pts
+			(xy 367.03 57.15) (xy 369.57 57.15)
 		)
 		(stroke
 			(width 0)
@@ -12207,6 +12677,16 @@
 			(type default)
 		)
 		(uuid "be0d60a7-2c56-4c04-a03e-29e7fd31100a")
+	)
+	(wire
+		(pts
+			(xy 173.99 35.56) (xy 179.07 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c07457c1-1988-4664-8cd8-9de5077fc57d")
 	)
 	(wire
 		(pts
@@ -12270,6 +12750,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 33.02) (xy 182.88 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9af1940-813d-454b-b480-62825d43535f")
+	)
+	(wire
+		(pts
 			(xy 100.33 59.69) (xy 100.33 60.96)
 		)
 		(stroke
@@ -12300,6 +12790,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 35.56) (xy 182.88 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbee071f-4877-4fe3-9eb6-3ea8d8a6d057")
+	)
+	(wire
+		(pts
 			(xy 304.8 135.89) (xy 304.8 154.94)
 		)
 		(stroke
@@ -12327,6 +12827,16 @@
 			(type default)
 		)
 		(uuid "cf06d38f-4e57-4eae-8078-14a2212a6ba7")
+	)
+	(wire
+		(pts
+			(xy 165.1 55.88) (xy 165.1 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf2eff5e-2df8-47f4-b93e-162f98d24afd")
 	)
 	(wire
 		(pts
@@ -12370,6 +12880,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 40.64) (xy 181.61 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f41a91-aada-4f28-a7e3-27dddbe61245")
+	)
+	(wire
+		(pts
 			(xy 247.65 110.49) (xy 247.65 118.11)
 		)
 		(stroke
@@ -12377,6 +12897,16 @@
 			(type default)
 		)
 		(uuid "d34aea24-9ade-48bb-9f2c-52ebaa8cdbe8")
+	)
+	(wire
+		(pts
+			(xy 177.8 33.02) (xy 177.8 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5482ac3-5cf0-40ad-bbcc-494b63e26125")
 	)
 	(wire
 		(pts
@@ -12390,7 +12920,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 81.28) (xy 284.48 81.28)
+			(xy 289.56 78.74) (xy 299.72 78.74)
 		)
 		(stroke
 			(width 0)
@@ -12420,7 +12950,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 81.28) (xy 264.16 81.28)
+			(xy 269.24 78.74) (xy 279.4 78.74)
 		)
 		(stroke
 			(width 0)
@@ -12450,7 +12980,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 55.88) (xy 294.64 55.88)
+			(xy 299.72 53.34) (xy 309.88 53.34)
 		)
 		(stroke
 			(width 0)
@@ -12460,7 +12990,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 40.64) (xy 243.84 40.64)
+			(xy 248.92 38.1) (xy 259.08 38.1)
 		)
 		(stroke
 			(width 0)
@@ -12490,7 +13020,17 @@
 	)
 	(wire
 		(pts
-			(xy 254 66.04) (xy 264.16 66.04)
+			(xy 182.88 63.5) (xy 173.99 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e691e306-1971-44c0-8baa-74915573d414")
+	)
+	(wire
+		(pts
+			(xy 269.24 63.5) (xy 279.4 63.5)
 		)
 		(stroke
 			(width 0)
@@ -12500,7 +13040,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 62.23) (xy 336.55 62.23)
+			(xy 345.44 59.69) (xy 351.79 59.69)
 		)
 		(stroke
 			(width 0)
@@ -12510,7 +13050,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 40.64) (xy 294.64 40.64)
+			(xy 299.72 38.1) (xy 309.88 38.1)
 		)
 		(stroke
 			(width 0)
@@ -12540,7 +13080,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 50.8) (xy 162.56 50.8)
+			(xy 182.88 40.64) (xy 181.61 40.64)
 		)
 		(stroke
 			(width 0)
@@ -12550,7 +13090,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 45.72) (xy 149.86 48.26)
+			(xy 151.13 35.56) (xy 151.13 38.1)
 		)
 		(stroke
 			(width 0)
@@ -12560,7 +13100,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 40.64) (xy 284.48 40.64)
+			(xy 289.56 38.1) (xy 299.72 38.1)
 		)
 		(stroke
 			(width 0)
@@ -12620,7 +13160,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.2 67.31) (xy 344.17 67.31)
+			(xy 345.44 64.77) (xy 359.41 64.77)
 		)
 		(stroke
 			(width 0)
@@ -12680,6 +13220,16 @@
 	)
 	(wire
 		(pts
+			(xy 161.29 53.34) (xy 166.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faadba94-1802-43bf-aa3c-8f8c2a1a6d7e")
+	)
+	(wire
+		(pts
 			(xy 130.81 168.91) (xy 130.81 166.37)
 		)
 		(stroke
@@ -12690,7 +13240,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 81.28) (xy 254 81.28)
+			(xy 259.08 78.74) (xy 269.24 78.74)
 		)
 		(stroke
 			(width 0)
@@ -13010,7 +13560,7 @@
 	)
 	(global_label "CS"
 		(shape input)
-		(at 158.75 53.34 180)
+		(at 161.29 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13020,7 +13570,7 @@
 		)
 		(uuid "38f3501b-c97a-4742-aa6e-1abbf0685d68")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 153.2853 53.34 0)
+			(at 155.8253 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13142,7 +13692,7 @@
 	)
 	(global_label "LED_PWR"
 		(shape output)
-		(at 354.33 59.69 0)
+		(at 369.57 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13152,12 +13702,34 @@
 		)
 		(uuid "58d9a644-add2-490a-a7a1-58e0981b3c72")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 365.7213 59.69 0)
+			(at 380.9613 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI"
+		(shape input)
+		(at 163.83 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "61f283ca-fed4-4455-803d-2608fe75094e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 156.2486 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -13252,7 +13824,7 @@
 	)
 	(global_label "LED_PWR"
 		(shape input)
-		(at 229.87 40.64 180)
+		(at 245.11 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13262,7 +13834,7 @@
 		)
 		(uuid "78ed859e-a71b-4a57-bc5b-0853ecb462b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.4787 40.64 0)
+			(at 233.7187 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13341,7 +13913,7 @@
 	)
 	(global_label "SCK"
 		(shape input)
-		(at 158.75 45.72 180)
+		(at 161.29 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13351,7 +13923,7 @@
 		)
 		(uuid "8193fc19-148e-4718-85d2-932e0533f103")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.0153 45.72 0)
+			(at 154.5553 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13385,7 +13957,7 @@
 	)
 	(global_label "MOSI"
 		(shape input)
-		(at 158.75 43.18 180)
+		(at 161.29 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13395,7 +13967,7 @@
 		)
 		(uuid "9667aa94-4524-43f1-81d0-54458f2f8d5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.1686 43.18 0)
+			(at 153.7086 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13496,7 +14068,7 @@
 	)
 	(global_label "RST"
 		(shape input)
-		(at 46.99 130.81 180)
+		(at 39.37 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13507,7 +14079,7 @@
 		)
 		(uuid "affdc7ad-78a5-4715-ae89-db1338306030")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.5577 130.81 0)
+			(at 32.9377 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13539,9 +14111,31 @@
 			)
 		)
 	)
+	(global_label "CS"
+		(shape input)
+		(at 161.29 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b611996f-5b8b-4d56-b5fb-d1b938e75d32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.8253 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED_Ctrl"
 		(shape input)
-		(at 318.77 62.23 180)
+		(at 334.01 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13551,7 +14145,7 @@
 		)
 		(uuid "b967d5dc-8345-4432-84fb-5168cb09dcac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 307.923 62.23 0)
+			(at 323.163 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13762,7 +14356,7 @@
 	)
 	(global_label "LED_PWR"
 		(shape input)
-		(at 229.87 66.04 180)
+		(at 245.11 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13772,7 +14366,29 @@
 		)
 		(uuid "da3d7125-683e-4dc8-a71e-742a3efa546a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 218.4787 66.04 0)
+			(at 233.7187 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCK"
+		(shape input)
+		(at 162.56 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3b22d2a-92f3-45f7-885e-45f5eacb67d2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.8253 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13963,7 +14579,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 250.19 120.65 0)
 			(effects
 				(font
@@ -14031,7 +14647,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 250.19 138.43 0)
 			(effects
 				(font
@@ -14099,7 +14715,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 269.24 157.48 0)
 			(effects
 				(font
@@ -14143,16 +14759,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 162.56 57.15 0)
+		(at 165.1 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "07190e0a-247d-47f3-9a7b-971e96979a4c")
 		(property "Reference" "#PWR068"
-			(at 162.56 63.5 0)
+			(at 165.1 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14161,7 +14776,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 162.56 62.23 0)
+			(at 165.608 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14169,7 +14784,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 57.15 0)
+			(at 165.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14178,7 +14793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 57.15 0)
+			(at 165.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14187,7 +14802,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 162.56 57.15 0)
+			(at 165.1 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14269,6 +14884,74 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "09bd1141-a863-4423-beaa-ef3ca205880a")
+		(property "Reference" "JP5"
+			(at 173.228 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 170.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7ecfdaa2-9993-41b0-84e8-f226de58eb99")
+		)
+		(pin "1"
+			(uuid "98cdb496-7ad3-4ee4-a3b7-d47e7ffb50b4")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -14407,7 +15090,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 341.63 62.23 0)
+		(at 356.87 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14416,7 +15099,7 @@
 		(fields_autoplaced yes)
 		(uuid "0ab5e4a2-170f-4cf7-9198-c8f25cc04bb2")
 		(property "Reference" "Q5"
-			(at 347.98 60.9599 0)
+			(at 363.22 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14425,7 +15108,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 347.98 63.4999 0)
+			(at 363.22 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14434,7 +15117,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 346.71 64.135 0)
+			(at 361.95 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14445,7 +15128,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 341.63 62.23 0)
+			(at 356.87 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14455,7 +15138,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 341.63 62.23 0)
+			(at 356.87 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14549,7 +15232,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 284.48 77.47 0)
+		(at 299.72 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14558,7 +15241,7 @@
 		(fields_autoplaced yes)
 		(uuid "10918756-97ef-4715-8e20-bca84bf628d3")
 		(property "Reference" "R20"
-			(at 287.02 76.1999 0)
+			(at 302.26 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14567,7 +15250,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 287.02 78.7399 0)
+			(at 302.26 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14576,7 +15259,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 282.702 77.47 90)
+			(at 297.942 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14585,7 +15268,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 284.48 77.47 0)
+			(at 299.72 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14594,7 +15277,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 284.48 77.47 0)
+			(at 299.72 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14686,7 +15369,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 274.32 69.85 90)
+		(at 289.56 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14695,7 +15378,7 @@
 		(fields_autoplaced yes)
 		(uuid "144ed9ff-fb80-4c68-a126-28c638591539")
 		(property "Reference" "D43"
-			(at 278.13 70.1674 90)
+			(at 293.37 67.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14704,7 +15387,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 278.13 72.7074 90)
+			(at 293.37 70.1674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14712,8 +15395,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 274.32 69.85 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 289.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14722,7 +15405,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 274.32 69.85 0)
+			(at 289.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14731,7 +15414,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 274.32 69.85 0)
+			(at 289.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14740,7 +15423,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 274.32 69.85 0)
+			(at 289.56 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14791,7 +15474,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 271.78 180.34 90)
 			(effects
 				(font
@@ -14879,7 +15562,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 290.83 162.56 90)
 			(effects
 				(font
@@ -15033,7 +15716,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 252.73 125.73 90)
 			(effects
 				(font
@@ -15162,7 +15845,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 264.16 77.47 0)
+		(at 279.4 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15171,7 +15854,7 @@
 		(fields_autoplaced yes)
 		(uuid "1b92f3b6-0d7b-41c3-9006-2d01c6c6ec78")
 		(property "Reference" "R14"
-			(at 266.7 76.1999 0)
+			(at 281.94 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15180,7 +15863,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 266.7 78.7399 0)
+			(at 281.94 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15189,7 +15872,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 262.382 77.47 90)
+			(at 277.622 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15198,7 +15881,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 264.16 77.47 0)
+			(at 279.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15207,7 +15890,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 264.16 77.47 0)
+			(at 279.4 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15225,6 +15908,74 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d3aed4d-7624-4d3b-9831-a3cebb4958ba")
+		(property "Reference" "JP10"
+			(at 173.228 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 170.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fcad8967-695b-451b-a840-26ef3b7f506f")
+		)
+		(pin "1"
+			(uuid "86402acb-c48f-474d-a8ea-304a1189f641")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP10")
 					(unit 1)
 				)
 			)
@@ -15258,7 +16009,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 271.78 143.51 90)
 			(effects
 				(font
@@ -15411,7 +16162,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 309.88 180.34 90)
 			(effects
 				(font
@@ -15466,6 +16217,72 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2234198d-c41a-48c1-8b18-5cd66a36aa6a")
+		(property "Reference" "#PWR075"
+			(at 165.1 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72581a06-9e58-4057-8746-d43411d4d19d")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -15726,7 +16543,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 290.83 143.51 90)
 			(effects
 				(font
@@ -15874,35 +16691,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 243.84 69.85 90)
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "263b9032-83d9-40ef-bba0-7d16924b27ec")
-		(property "Reference" "D37"
-			(at 247.65 70.1674 90)
+		(uuid "2380b4c5-20d0-414e-ac7c-ae9c4c9e8727")
+		(property "Reference" "JP4"
+			(at 173.228 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "LED"
-			(at 247.65 72.7074 90)
+		(property "Value" "SolderJumper_2_Open"
+			(at 170.18 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 243.84 69.85 0)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15911,7 +16726,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 69.85 0)
+			(at 170.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0ed76f8a-5fa6-46a6-84ec-a6730f22826b")
+		)
+		(pin "1"
+			(uuid "333a92b4-9419-4a27-9167-e7f590d07f35")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 259.08 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "263b9032-83d9-40ef-bba0-7d16924b27ec")
+		(property "Reference" "D37"
+			(at 262.89 67.6274 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 262.89 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 259.08 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15920,7 +16805,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 243.84 69.85 0)
+			(at 259.08 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15929,7 +16814,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 243.84 69.85 0)
+			(at 259.08 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15954,7 +16839,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 274.32 77.47 0)
+		(at 289.56 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15963,7 +16848,7 @@
 		(fields_autoplaced yes)
 		(uuid "28669748-6232-4ab5-ba6b-23068da50360")
 		(property "Reference" "R19"
-			(at 276.86 76.1999 0)
+			(at 292.1 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15972,7 +16857,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 276.86 78.7399 0)
+			(at 292.1 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15981,7 +16866,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 272.542 77.47 90)
+			(at 287.782 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15990,7 +16875,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 274.32 77.47 0)
+			(at 289.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15999,7 +16884,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 274.32 77.47 0)
+			(at 289.56 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16088,16 +16973,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 149.86 57.15 0)
+		(at 151.13 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2c400aaf-64fe-4ab1-9913-22fb73a28e67")
 		(property "Reference" "#PWR059"
-			(at 149.86 63.5 0)
+			(at 151.13 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16106,7 +16990,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 62.23 0)
+			(at 151.13 49.784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16114,7 +16998,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 57.15 0)
+			(at 151.13 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16123,7 +17007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 57.15 0)
+			(at 151.13 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16132,7 +17016,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 149.86 57.15 0)
+			(at 151.13 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16219,6 +17103,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2e504324-2dca-4da0-b803-1e2c484cd743")
+		(property "Reference" "JP8"
+			(at 173.228 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7d83c808-7030-47cf-842f-bc65d4390db9")
+		)
+		(pin "1"
+			(uuid "411612b3-242f-4f83-9dba-fed8f9afeb6c")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Small")
 		(at 271.78 198.12 90)
 		(unit 1)
@@ -16246,7 +17198,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 271.78 198.12 90)
 			(effects
 				(font
@@ -16541,7 +17493,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 250.19 175.26 0)
 			(effects
 				(font
@@ -16584,6 +17536,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "34d92e24-d238-4129-99ab-d83c3c3552da")
+		(property "Reference" "JP6"
+			(at 173.482 52.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 176.022 58.928 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ca16b151-dc0d-4ff6-8f18-8c3647d0988e")
+		)
+		(pin "1"
+			(uuid "4e99a710-39c7-4f65-9e7c-499d64a9817a")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_marbastlib-choc:choc_v1_SW_solder")
 		(at 231.14 120.65 0)
 		(unit 1)
@@ -16609,7 +17629,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 231.14 120.65 0)
 			(effects
 				(font
@@ -16653,7 +17673,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 233.68 52.07 0)
+		(at 248.92 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16662,7 +17682,7 @@
 		(fields_autoplaced yes)
 		(uuid "36b2eeeb-99e9-447d-bd99-855d2c53e614")
 		(property "Reference" "R1"
-			(at 236.22 50.7999 0)
+			(at 251.46 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16671,7 +17691,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 236.22 53.3399 0)
+			(at 251.46 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16680,7 +17700,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 231.902 52.07 90)
+			(at 247.142 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16689,7 +17709,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 52.07 0)
+			(at 248.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16698,7 +17718,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 233.68 52.07 0)
+			(at 248.92 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16810,7 +17830,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 344.17 52.07 0)
+		(at 359.41 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16819,7 +17839,7 @@
 		(fields_autoplaced yes)
 		(uuid "380b49fe-030b-4c62-8012-a31662c87768")
 		(property "Reference" "R30"
-			(at 342.265 50.7999 0)
+			(at 357.505 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16828,7 +17848,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 342.265 53.3399 0)
+			(at 357.505 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16837,7 +17857,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 344.17 52.07 0)
+			(at 359.41 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16846,7 +17866,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 344.17 52.07 0)
+			(at 359.41 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16855,7 +17875,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 344.17 52.07 0)
+			(at 359.41 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16864,7 +17884,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 344.17 52.07 0)
+			(at 359.41 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16882,6 +17902,74 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "38913655-b1f9-4e1b-b4ab-bec9aa86c99c")
+		(property "Reference" "JP3"
+			(at 173.228 37.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 170.18 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f5b1e525-1eaf-4984-a6e7-1987f1d5a72b")
+		)
+		(pin "1"
+			(uuid "cffded1e-44fc-4cd5-9966-d350e258db8b")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP3")
 					(unit 1)
 				)
 			)
@@ -16913,7 +18001,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 212.09 157.48 0)
 			(effects
 				(font
@@ -17020,6 +18108,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3f4ab338-b194-40b9-bf51-40fd640c3233")
+		(property "Reference" "JP7"
+			(at 173.228 54.864 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 176.022 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "18f31665-aebb-43e9-8dd7-af433597211d")
+		)
+		(pin "1"
+			(uuid "afcdde88-34f9-427c-a1e6-aff3c18ee219")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_marbastlib-choc:choc_v1_SW_solder")
 		(at 269.24 120.65 0)
 		(unit 1)
@@ -17045,7 +18201,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 269.24 120.65 0)
 			(effects
 				(font
@@ -17181,7 +18337,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 309.88 125.73 90)
 			(effects
 				(font
@@ -17303,6 +18459,74 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "438a0b72-5923-47aa-afe5-b21b13e4540c")
+		(property "Reference" "JP9"
+			(at 173.228 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 170.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3674dfec-3d80-48c1-9551-07e08d25c1af")
+		)
+		(pin "1"
+			(uuid "caa3657b-e870-4d4c-b824-5994b6614a5b")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP9")
 					(unit 1)
 				)
 			)
@@ -17469,7 +18693,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 271.78 125.73 90)
 			(effects
 				(font
@@ -17555,7 +18779,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 288.29 193.04 0)
 			(effects
 				(font
@@ -17625,7 +18849,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 233.68 180.34 90)
 			(effects
 				(font
@@ -17920,7 +19144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 307.34 120.65 0)
 			(effects
 				(font
@@ -17964,7 +19188,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 294.64 77.47 0)
+		(at 309.88 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17973,7 +19197,7 @@
 		(fields_autoplaced yes)
 		(uuid "557fd8a8-4508-4bf1-9b7c-28a2805d83fb")
 		(property "Reference" "R25"
-			(at 297.18 76.1999 0)
+			(at 312.42 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17982,7 +19206,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 297.18 78.7399 0)
+			(at 312.42 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17991,7 +19215,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 292.862 77.47 90)
+			(at 308.102 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18000,7 +19224,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 294.64 77.47 0)
+			(at 309.88 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18009,7 +19233,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 294.64 77.47 0)
+			(at 309.88 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18034,7 +19258,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 284.48 44.45 90)
+		(at 299.72 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18043,7 +19267,7 @@
 		(fields_autoplaced yes)
 		(uuid "55cca228-3b1f-4bc6-b3ea-98effb464b51")
 		(property "Reference" "D41"
-			(at 288.29 44.7674 90)
+			(at 303.53 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18052,7 +19276,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 288.29 47.3074 90)
+			(at 303.53 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18060,8 +19284,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 284.48 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 299.72 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18070,7 +19294,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 284.48 44.45 0)
+			(at 299.72 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18079,7 +19303,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 284.48 44.45 0)
+			(at 299.72 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18088,7 +19312,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 284.48 44.45 0)
+			(at 299.72 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18113,7 +19337,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 304.8 52.07 0)
+		(at 320.04 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18122,7 +19346,7 @@
 		(fields_autoplaced yes)
 		(uuid "564f6bd8-d459-4a42-9640-45ec44a4c74e")
 		(property "Reference" "R24"
-			(at 307.34 50.7999 0)
+			(at 322.58 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18131,7 +19355,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 307.34 53.3399 0)
+			(at 322.58 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18140,7 +19364,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 303.022 52.07 90)
+			(at 318.262 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18149,7 +19373,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 52.07 0)
+			(at 320.04 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18158,7 +19382,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 304.8 52.07 0)
+			(at 320.04 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18261,7 +19485,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 264.16 69.85 90)
+		(at 279.4 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18270,7 +19494,7 @@
 		(fields_autoplaced yes)
 		(uuid "5aa4427c-d067-486d-9cde-cbd847537b1c")
 		(property "Reference" "D42"
-			(at 267.97 70.1674 90)
+			(at 283.21 67.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18279,7 +19503,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 267.97 72.7074 90)
+			(at 283.21 70.1674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18287,8 +19511,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 264.16 69.85 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 279.4 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18297,7 +19521,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 264.16 69.85 0)
+			(at 279.4 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18306,7 +19530,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 264.16 69.85 0)
+			(at 279.4 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18315,7 +19539,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 264.16 69.85 0)
+			(at 279.4 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18363,7 +19587,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 303.53 193.04 0)
 			(effects
 				(font
@@ -18433,7 +19657,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 63.5 172.72 0)
 			(effects
 				(font
@@ -18552,7 +19776,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 294.64 52.07 0)
+		(at 309.88 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18561,7 +19785,7 @@
 		(fields_autoplaced yes)
 		(uuid "6384af18-78de-4476-a5d9-e4948308e6bb")
 		(property "Reference" "R21"
-			(at 297.18 50.7999 0)
+			(at 312.42 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18570,7 +19794,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 297.18 53.3399 0)
+			(at 312.42 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18579,7 +19803,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 292.862 52.07 90)
+			(at 308.102 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18588,7 +19812,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 294.64 52.07 0)
+			(at 309.88 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18597,7 +19821,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 294.64 52.07 0)
+			(at 309.88 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18688,7 +19912,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 254 52.07 0)
+		(at 269.24 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18697,7 +19921,7 @@
 		(fields_autoplaced yes)
 		(uuid "640c5dc6-bbf9-463a-be74-216a8ce862f7")
 		(property "Reference" "R5"
-			(at 256.54 50.7999 0)
+			(at 271.78 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18706,7 +19930,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 256.54 53.3399 0)
+			(at 271.78 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18715,7 +19939,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 252.222 52.07 90)
+			(at 267.462 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18724,7 +19948,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 52.07 0)
+			(at 269.24 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18733,7 +19957,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 254 52.07 0)
+			(at 269.24 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18782,7 +20006,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 288.29 120.65 0)
 			(effects
 				(font
@@ -18819,6 +20043,72 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "S20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 151.13 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "657fa5eb-25b0-4f07-b92a-5e2bd1f173ae")
+		(property "Reference" "#PWR061"
+			(at 151.13 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 148.082 53.086 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 151.13 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "91e92472-5321-4d2c-8c27-b3cdedeaa21e")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -18918,7 +20208,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 309.88 162.56 90)
 			(effects
 				(font
@@ -18980,7 +20270,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 274.32 44.45 90)
+		(at 289.56 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18989,7 +20279,7 @@
 		(fields_autoplaced yes)
 		(uuid "69d9c7ed-90f0-40b7-b59a-941f166c5b97")
 		(property "Reference" "D40"
-			(at 278.13 44.7674 90)
+			(at 293.37 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18998,7 +20288,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 278.13 47.3074 90)
+			(at 293.37 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19006,8 +20296,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 274.32 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 289.56 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19016,7 +20306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 274.32 44.45 0)
+			(at 289.56 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19025,7 +20315,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 274.32 44.45 0)
+			(at 289.56 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19034,7 +20324,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 274.32 44.45 0)
+			(at 289.56 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19149,7 +20439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 231.14 175.26 0)
 			(effects
 				(font
@@ -19284,7 +20574,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 307.34 157.48 0)
 			(effects
 				(font
@@ -19498,7 +20788,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 231.14 138.43 0)
 			(effects
 				(font
@@ -19542,7 +20832,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 294.64 69.85 90)
+		(at 309.88 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19551,7 +20841,7 @@
 		(fields_autoplaced yes)
 		(uuid "75d01cdc-7d97-4a98-aecd-522fb79f9a4f")
 		(property "Reference" "D47"
-			(at 298.45 70.1674 90)
+			(at 313.69 67.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19560,7 +20850,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 298.45 72.7074 90)
+			(at 313.69 70.1674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19568,8 +20858,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 294.64 69.85 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 309.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19578,7 +20868,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 294.64 69.85 0)
+			(at 309.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19587,7 +20877,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 294.64 69.85 0)
+			(at 309.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19596,7 +20886,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 294.64 69.85 0)
+			(at 309.88 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19757,7 +21047,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 212.09 175.26 0)
 			(effects
 				(font
@@ -19891,7 +21181,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 214.63 180.34 90)
 			(effects
 				(font
@@ -19977,7 +21267,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 307.34 138.43 0)
 			(effects
 				(font
@@ -20116,7 +21406,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 252.73 162.56 90)
 			(effects
 				(font
@@ -20342,7 +21632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 212.09 120.65 0)
 			(effects
 				(font
@@ -20564,7 +21854,7 @@
 	)
 	(symbol
 		(lib_id "power:+VSW")
-		(at 344.17 49.53 0)
+		(at 359.41 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20573,7 +21863,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a5f942a-0488-414a-8fec-13c8fffb86f1")
 		(property "Reference" "#PWR072"
-			(at 344.17 53.34 0)
+			(at 359.41 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20582,7 +21872,7 @@
 			)
 		)
 		(property "Value" "+VSW"
-			(at 344.17 44.45 0)
+			(at 359.41 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20590,7 +21880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 344.17 49.53 0)
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20599,7 +21889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 344.17 49.53 0)
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20608,7 +21898,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 344.17 49.53 0)
+			(at 359.41 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20796,7 +22086,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 269.24 193.04 0)
 			(effects
 				(font
@@ -21280,7 +22570,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 254 69.85 90)
+		(at 269.24 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21289,7 +22579,7 @@
 		(fields_autoplaced yes)
 		(uuid "968f82a5-aa78-441f-bd0a-b4d11c62b823")
 		(property "Reference" "D38"
-			(at 257.81 70.1674 90)
+			(at 273.05 67.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21298,7 +22588,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 257.81 72.7074 90)
+			(at 273.05 70.1674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21306,8 +22596,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 254 69.85 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 269.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21316,7 +22606,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 69.85 0)
+			(at 269.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21325,7 +22615,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 254 69.85 0)
+			(at 269.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21334,7 +22624,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 254 69.85 0)
+			(at 269.24 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21428,7 +22718,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 243.84 77.47 0)
+		(at 259.08 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21437,7 +22727,7 @@
 		(fields_autoplaced yes)
 		(uuid "989062e5-a097-4b93-a37e-a11a3d0e7e8b")
 		(property "Reference" "R7"
-			(at 246.38 76.1999 0)
+			(at 261.62 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21446,7 +22736,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 246.38 78.7399 0)
+			(at 261.62 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21455,7 +22745,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 242.062 77.47 90)
+			(at 257.302 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21464,7 +22754,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 77.47 0)
+			(at 259.08 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21473,7 +22763,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 243.84 77.47 0)
+			(at 259.08 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21498,7 +22788,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 330.2 64.77 0)
+		(at 345.44 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21507,7 +22797,7 @@
 		(fields_autoplaced yes)
 		(uuid "9970e2ff-b28c-4521-95dc-60ab4934edb8")
 		(property "Reference" "R29"
-			(at 332.74 63.4999 0)
+			(at 347.98 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21516,7 +22806,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 332.74 66.0399 0)
+			(at 347.98 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21525,7 +22815,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 330.2 64.77 0)
+			(at 345.44 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21534,7 +22824,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 330.2 64.77 0)
+			(at 345.44 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21543,7 +22833,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 330.2 64.77 0)
+			(at 345.44 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21552,7 +22842,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 330.2 64.77 0)
+			(at 345.44 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21642,35 +22932,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 254 77.47 0)
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9e4193d8-bf9a-4eb8-bc55-c9856c36fcda")
-		(property "Reference" "R8"
-			(at 256.54 76.1999 0)
+		(uuid "9c0ff5d0-cf98-499e-ab7c-a9c64b29a407")
+		(property "Reference" "JP1"
+			(at 173.482 32.004 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "1.5k"
-			(at 256.54 78.7399 0)
+		(property "Value" "SolderJumper_2_Open"
+			(at 176.022 38.608 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 252.222 77.47 90)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21679,7 +22967,77 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 77.47 0)
+			(at 170.18 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "07f6e2be-4431-41a0-8ed1-6bbbc97fe6cc")
+		)
+		(pin "1"
+			(uuid "2626a53b-36f1-4bdf-a86b-b07d89413569")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 269.24 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e4193d8-bf9a-4eb8-bc55-c9856c36fcda")
+		(property "Reference" "R8"
+			(at 271.78 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5k"
+			(at 271.78 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 267.462 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 269.24 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21688,7 +23046,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 254 77.47 0)
+			(at 269.24 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21780,7 +23138,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 264.16 52.07 0)
+		(at 279.4 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21789,7 +23147,7 @@
 		(fields_autoplaced yes)
 		(uuid "a06e0d87-2f5e-40c4-8034-c4170973b1fa")
 		(property "Reference" "R11"
-			(at 266.7 50.7999 0)
+			(at 281.94 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21798,7 +23156,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 266.7 53.3399 0)
+			(at 281.94 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21807,7 +23165,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 262.382 52.07 90)
+			(at 277.622 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21816,7 +23174,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 264.16 52.07 0)
+			(at 279.4 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21825,7 +23183,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 264.16 52.07 0)
+			(at 279.4 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21843,6 +23201,74 @@
 			(project "skyline"
 				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 170.18 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1551e08-2a68-4e0d-88c0-6a051cdf709f")
+		(property "Reference" "JP2"
+			(at 173.228 34.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 176.022 41.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "reversible_skyline:Jumper_solder"
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 170.18 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c1e993f1-f0ba-4f74-b682-c1f79bf23b4d")
+		)
+		(pin "1"
+			(uuid "79ac868c-bdb7-4531-a4ce-3860f387678e")
+		)
+		(instances
+			(project ""
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -21875,7 +23301,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 307.34 198.12 90)
 			(effects
 				(font
@@ -22039,7 +23465,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 288.29 157.48 0)
 			(effects
 				(font
@@ -22083,7 +23509,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 135.89 0)
+		(at 53.34 137.16 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -22093,7 +23519,7 @@
 		(fields_autoplaced yes)
 		(uuid "a823617f-e0e0-410b-8e22-20d441c6f002")
 		(property "Reference" "#PWR018"
-			(at 53.34 142.24 0)
+			(at 53.34 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22102,7 +23528,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 140.97 0)
+			(at 53.34 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22110,7 +23536,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 135.89 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22119,7 +23545,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 135.89 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22128,7 +23554,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 53.34 135.89 0)
+			(at 53.34 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22174,7 +23600,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 288.29 175.26 0)
 			(effects
 				(font
@@ -22218,7 +23644,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 233.68 44.45 90)
+		(at 248.92 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22227,7 +23653,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9720e10-ea2b-48c8-9d99-85c10c5e9029")
 		(property "Reference" "D33"
-			(at 237.49 44.7674 90)
+			(at 252.73 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22236,7 +23662,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 237.49 47.3074 90)
+			(at 252.73 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22244,8 +23670,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 233.68 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22254,7 +23680,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 44.45 0)
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22263,7 +23689,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 233.68 44.45 0)
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22272,7 +23698,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 233.68 44.45 0)
+			(at 248.92 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22323,7 +23749,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 252.73 180.34 90)
 			(effects
 				(font
@@ -22385,7 +23811,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 284.48 52.07 0)
+		(at 299.72 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22394,7 +23820,7 @@
 		(fields_autoplaced yes)
 		(uuid "ade22f85-410d-40c8-8906-657e998975b4")
 		(property "Reference" "R13"
-			(at 287.02 50.7999 0)
+			(at 302.26 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22403,7 +23829,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 287.02 53.3399 0)
+			(at 302.26 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22412,7 +23838,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 282.702 52.07 90)
+			(at 297.942 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22421,7 +23847,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 284.48 52.07 0)
+			(at 299.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22430,7 +23856,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 284.48 52.07 0)
+			(at 299.72 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22712,7 +24138,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 290.83 125.73 90)
 			(effects
 				(font
@@ -22774,7 +24200,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 264.16 44.45 90)
+		(at 279.4 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22783,7 +24209,7 @@
 		(fields_autoplaced yes)
 		(uuid "b755e49c-6b47-401a-86d6-0c84cde658ec")
 		(property "Reference" "D39"
-			(at 267.97 44.7674 90)
+			(at 283.21 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22792,7 +24218,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 267.97 47.3074 90)
+			(at 283.21 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22800,8 +24226,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 264.16 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 279.4 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22810,7 +24236,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 264.16 44.45 0)
+			(at 279.4 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22819,7 +24245,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 264.16 44.45 0)
+			(at 279.4 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22828,7 +24254,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 264.16 44.45 0)
+			(at 279.4 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22853,7 +24279,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 274.32 52.07 0)
+		(at 289.56 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22862,7 +24288,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7f34a14-2aac-4d6d-b77a-e71ae6077825")
 		(property "Reference" "R12"
-			(at 276.86 50.7999 0)
+			(at 292.1 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22871,7 +24297,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 276.86 53.3399 0)
+			(at 292.1 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22880,7 +24306,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 272.542 52.07 90)
+			(at 287.782 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22889,7 +24315,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 274.32 52.07 0)
+			(at 289.56 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22898,7 +24324,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 274.32 52.07 0)
+			(at 289.56 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22990,7 +24416,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 284.48 69.85 90)
+		(at 299.72 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22999,7 +24425,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba028306-4a96-42a8-af4a-3474a3074225")
 		(property "Reference" "D44"
-			(at 288.29 70.1674 90)
+			(at 303.53 67.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23008,7 +24434,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 288.29 72.7074 90)
+			(at 303.53 70.1674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23016,8 +24442,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 284.48 69.85 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 299.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23026,7 +24452,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 284.48 69.85 0)
+			(at 299.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23035,7 +24461,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 284.48 69.85 0)
+			(at 299.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23044,7 +24470,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 284.48 69.85 0)
+			(at 299.72 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23322,7 +24748,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 252.73 143.51 90)
 			(effects
 				(font
@@ -23552,7 +24978,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 309.88 143.51 90)
 			(effects
 				(font
@@ -23953,7 +25379,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 269.24 175.26 0)
 			(effects
 				(font
@@ -24023,7 +25449,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 233.68 162.56 90)
 			(effects
 				(font
@@ -24085,7 +25511,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 243.84 52.07 0)
+		(at 259.08 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24094,7 +25520,7 @@
 		(fields_autoplaced yes)
 		(uuid "c6d917d1-9d3f-4ef1-bcc7-5bc189d26d86")
 		(property "Reference" "R2"
-			(at 246.38 50.7999 0)
+			(at 261.62 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24103,7 +25529,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 246.38 53.3399 0)
+			(at 261.62 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24112,7 +25538,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 242.062 52.07 90)
+			(at 257.302 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24121,7 +25547,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 52.07 0)
+			(at 259.08 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24130,7 +25556,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 243.84 52.07 0)
+			(at 259.08 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24179,7 +25605,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 269.24 138.43 0)
 			(effects
 				(font
@@ -24223,7 +25649,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 233.68 77.47 0)
+		(at 248.92 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24232,7 +25658,7 @@
 		(fields_autoplaced yes)
 		(uuid "c81f5fe0-e510-4889-937f-246d404e49d2")
 		(property "Reference" "R6"
-			(at 236.22 76.1999 0)
+			(at 251.46 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24241,7 +25667,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 236.22 78.7399 0)
+			(at 251.46 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24250,7 +25676,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 231.902 77.47 90)
+			(at 247.142 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24259,7 +25685,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 77.47 0)
+			(at 248.92 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24268,7 +25694,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 233.68 77.47 0)
+			(at 248.92 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24317,7 +25743,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 250.19 193.04 0)
 			(effects
 				(font
@@ -24451,7 +25877,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 290.83 180.34 90)
 			(effects
 				(font
@@ -24513,7 +25939,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 254 44.45 90)
+		(at 269.24 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24522,7 +25948,7 @@
 		(fields_autoplaced yes)
 		(uuid "cadb7e5c-6ca4-4abb-bd39-94fb327d425d")
 		(property "Reference" "D35"
-			(at 257.81 44.7674 90)
+			(at 273.05 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24531,7 +25957,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 257.81 47.3074 90)
+			(at 273.05 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24539,8 +25965,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 254 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 269.24 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24549,7 +25975,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 254 44.45 0)
+			(at 269.24 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24558,7 +25984,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 254 44.45 0)
+			(at 269.24 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24567,7 +25993,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 254 44.45 0)
+			(at 269.24 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24592,7 +26018,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 344.17 67.31 0)
+		(at 359.41 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24601,7 +26027,7 @@
 		(fields_autoplaced yes)
 		(uuid "ccaf8c9f-099f-4ce8-96e6-392e19a14cb2")
 		(property "Reference" "#PWR073"
-			(at 344.17 73.66 0)
+			(at 359.41 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24610,7 +26036,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 346.71 68.3894 0)
+			(at 361.95 65.8494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24619,7 +26045,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 344.17 67.31 0)
+			(at 359.41 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24628,7 +26054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 344.17 67.31 0)
+			(at 359.41 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24637,7 +26063,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 344.17 67.31 0)
+			(at 359.41 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24659,7 +26085,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 243.84 44.45 90)
+		(at 259.08 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24668,7 +26094,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd1d8eff-b3b2-4232-bf46-976c04d66c29")
 		(property "Reference" "D34"
-			(at 247.65 44.7674 90)
+			(at 262.89 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24677,7 +26103,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 247.65 47.3074 90)
+			(at 262.89 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24685,8 +26111,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 243.84 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 259.08 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24695,7 +26121,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 44.45 0)
+			(at 259.08 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24704,7 +26130,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 243.84 44.45 0)
+			(at 259.08 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24713,7 +26139,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 243.84 44.45 0)
+			(at 259.08 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24817,7 +26243,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 233.68 69.85 90)
+		(at 248.92 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24826,7 +26252,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf401851-b054-4476-8cb7-d6b5a6e5a7f0")
 		(property "Reference" "D36"
-			(at 237.49 70.1674 90)
+			(at 252.73 67.6274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24835,7 +26261,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 237.49 72.7074 90)
+			(at 252.73 70.1674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24843,8 +26269,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 233.68 69.85 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 248.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24853,7 +26279,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 69.85 0)
+			(at 248.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24862,7 +26288,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 233.68 69.85 0)
+			(at 248.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24871,7 +26297,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 233.68 69.85 0)
+			(at 248.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24922,7 +26348,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 252.73 198.12 90)
 			(effects
 				(font
@@ -25010,7 +26436,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 214.63 125.73 90)
 			(effects
 				(font
@@ -25072,7 +26498,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 264.16 83.82 0)
+		(at 279.4 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25081,7 +26507,7 @@
 		(fields_autoplaced yes)
 		(uuid "d359cd79-13af-41f4-97e2-8a9c9bfe270e")
 		(property "Reference" "#PWR069"
-			(at 264.16 90.17 0)
+			(at 279.4 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25090,7 +26516,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 264.16 88.9 0)
+			(at 279.4 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25098,7 +26524,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 83.82 0)
+			(at 279.4 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25107,7 +26533,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 83.82 0)
+			(at 279.4 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25116,7 +26542,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 264.16 83.82 0)
+			(at 279.4 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25138,7 +26564,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 294.64 44.45 90)
+		(at 309.88 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25147,7 +26573,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4a1c71a-3bb6-4f79-877a-16ad823c18ba")
 		(property "Reference" "D45"
-			(at 298.45 44.7674 90)
+			(at 313.69 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25156,7 +26582,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 298.45 47.3074 90)
+			(at 313.69 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25164,8 +26590,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 294.64 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 309.88 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25174,7 +26600,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 294.64 44.45 0)
+			(at 309.88 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25183,7 +26609,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 294.64 44.45 0)
+			(at 309.88 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25192,7 +26618,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 294.64 44.45 0)
+			(at 309.88 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25287,7 +26713,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 58.42 0)
+		(at 289.56 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25296,7 +26722,7 @@
 		(fields_autoplaced yes)
 		(uuid "db1d0398-3e3b-4afc-b849-a39960591281")
 		(property "Reference" "#PWR070"
-			(at 274.32 64.77 0)
+			(at 289.56 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25305,7 +26731,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 63.5 0)
+			(at 289.56 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25313,7 +26739,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 58.42 0)
+			(at 289.56 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25322,7 +26748,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 58.42 0)
+			(at 289.56 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25331,7 +26757,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 274.32 58.42 0)
+			(at 289.56 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25377,7 +26803,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 307.34 175.26 0)
 			(effects
 				(font
@@ -25500,7 +26926,7 @@
 	)
 	(symbol
 		(lib_id "nice_view:nice!view")
-		(at 176.53 48.26 270)
+		(at 195.58 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25509,7 +26935,7 @@
 		(fields_autoplaced yes)
 		(uuid "dca288c0-1f69-4b7d-9a05-f985a2c2cded")
 		(property "Reference" "OLED1"
-			(at 189.23 46.9899 90)
+			(at 208.28 36.8299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25518,7 +26944,7 @@
 			)
 		)
 		(property "Value" "nice!view"
-			(at 189.23 49.5299 90)
+			(at 208.28 39.3699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25527,7 +26953,7 @@
 			)
 		)
 		(property "Footprint" "nice_view:nice_view"
-			(at 193.04 48.26 0)
+			(at 212.09 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25536,7 +26962,7 @@
 			)
 		)
 		(property "Datasheet" "https://nicekeyboards.com/docs/nice-view/pinout-schematic"
-			(at 151.13 50.8 0)
+			(at 170.18 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25545,7 +26971,7 @@
 			)
 		)
 		(property "Description" "Sharp LS011B7DH03 Memory in Pixel 160x68"
-			(at 176.53 48.26 0)
+			(at 195.58 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25692,7 +27118,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 233.68 125.73 90)
 			(effects
 				(font
@@ -25754,7 +27180,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 149.86 52.07 0)
+		(at 151.13 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25762,7 +27188,7 @@
 		(dnp no)
 		(uuid "e125a9ba-e59e-4796-872e-03d20d5bea81")
 		(property "Reference" "C5"
-			(at 143.764 51.308 0)
+			(at 145.034 41.148 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25771,7 +27197,7 @@
 			)
 		)
 		(property "Value" "10n"
-			(at 143.51 54.102 0)
+			(at 144.78 43.942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25780,7 +27206,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 150.8252 55.88 0)
+			(at 152.0952 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25789,7 +27215,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 52.07 0)
+			(at 151.13 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25798,7 +27224,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 149.86 52.07 0)
+			(at 151.13 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25847,7 +27273,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 231.14 157.48 0)
 			(effects
 				(font
@@ -25983,7 +27409,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 233.68 143.51 90)
 			(effects
 				(font
@@ -26111,6 +27537,159 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 45.72 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9a2ae9b-bd3c-4ca9-8f98-a53e96fa63de")
+		(property "Reference" "C16"
+			(at 39.116 134.112 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 38.608 136.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Notes" "X7R, 10%"
+			(at 45.72 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4d785e16-d131-4b7c-997e-7c3d3ec8aa43")
+		)
+		(pin "2"
+			(uuid "46689125-3325-4c4f-a3c5-68ce1a8d7b5b")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 151.13 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea8473d4-a438-4fc4-a059-8df69d2e3919")
+		(property "Reference" "#PWR062"
+			(at 151.13 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.13 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 151.13 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "54558873-239b-4b4f-94e5-7690a75ace97")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Small")
 		(at 214.63 143.51 90)
 		(unit 1)
@@ -26138,7 +27717,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 214.63 143.51 90)
 			(effects
 				(font
@@ -26224,7 +27803,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 288.29 138.43 0)
 			(effects
 				(font
@@ -26294,7 +27873,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 271.78 162.56 90)
 			(effects
 				(font
@@ -26356,7 +27935,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 304.8 44.45 90)
+		(at 320.04 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26365,7 +27944,7 @@
 		(fields_autoplaced yes)
 		(uuid "f17834ea-7ee1-4f9e-be66-5da86f4d9e18")
 		(property "Reference" "D46"
-			(at 308.61 44.7674 90)
+			(at 323.85 42.2274 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26374,7 +27953,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 308.61 47.3074 90)
+			(at 323.85 44.7674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26382,8 +27961,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 304.8 44.45 0)
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 320.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26392,7 +27971,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 44.45 0)
+			(at 320.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26401,7 +27980,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 304.8 44.45 0)
+			(at 320.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26410,7 +27989,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 304.8 44.45 0)
+			(at 320.04 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26459,7 +28038,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 212.09 138.43 0)
 			(effects
 				(font
@@ -26527,7 +28106,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_marbastlib-choc:SW_choc_v1_1u"
+		(property "Footprint" "PCM_marbastlib-xp-choc:SW_choc_Reversible_1u"
 			(at 250.19 157.48 0)
 			(effects
 				(font
@@ -26597,7 +28176,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 214.63 162.56 90)
 			(effects
 				(font
@@ -26659,7 +28238,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:AO3401A")
-		(at 349.25 54.61 0)
+		(at 364.49 52.07 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26669,7 +28248,7 @@
 		(fields_autoplaced yes)
 		(uuid "f944be58-3941-4190-a7c6-72c05ec6349f")
 		(property "Reference" "Q6"
-			(at 354.965 53.3399 0)
+			(at 370.205 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26678,7 +28257,7 @@
 			)
 		)
 		(property "Value" "AO3401A"
-			(at 354.965 55.8799 0)
+			(at 370.205 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26687,7 +28266,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 354.33 52.705 0)
+			(at 369.57 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26698,7 +28277,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf"
-			(at 349.25 54.61 0)
+			(at 364.49 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26708,7 +28287,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 349.25 54.61 0)
+			(at 364.49 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26736,7 +28315,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 149.86 45.72 0)
+		(at 151.13 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26744,7 +28323,7 @@
 		(dnp no)
 		(uuid "f971301e-b191-4509-aa49-30d4435548be")
 		(property "Reference" "#PWR058"
-			(at 149.86 49.53 0)
+			(at 151.13 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26753,7 +28332,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 146.05 39.624 0)
+			(at 147.32 29.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26762,7 +28341,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.86 45.72 0)
+			(at 151.13 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26771,7 +28350,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 45.72 0)
+			(at 151.13 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26780,7 +28359,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 149.86 45.72 0)
+			(at 151.13 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26801,33 +28380,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 325.12 62.23 90)
+		(lib_id "Device:C")
+		(at 151.13 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fb84d7da-9b2c-4a24-803f-d34e9ebed2a5")
-		(property "Reference" "R27"
-			(at 325.12 55.88 90)
+		(uuid "faf10d64-dc75-4870-9e50-7bd95d96dd0f")
+		(property "Reference" "C8"
+			(at 145.034 62.738 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "47"
-			(at 325.12 58.42 90)
+		(property "Value" "10n"
+			(at 144.78 65.532 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 325.12 64.008 90)
+		(property "Footprint" ""
+			(at 152.0952 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26836,7 +28416,75 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 325.12 62.23 0)
+			(at 151.13 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 151.13 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b7fc34d-a39c-4d6b-8e81-f06203250117")
+		)
+		(pin "2"
+			(uuid "13ba8ce3-6fec-47bf-b6d9-a2ed66296643")
+		)
+		(instances
+			(project "skyline"
+				(path "/75c3ddf0-abb2-4a5c-a069-cd82febeb99f"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 340.36 59.69 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb84d7da-9b2c-4a24-803f-d34e9ebed2a5")
+		(property "Reference" "R27"
+			(at 340.36 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "47"
+			(at 340.36 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 340.36 61.468 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 340.36 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26845,7 +28493,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 325.12 62.23 0)
+			(at 340.36 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26961,7 +28609,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+		(property "Footprint" "reversible_skyline:reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
 			(at 290.83 198.12 90)
 			(effects
 				(font
