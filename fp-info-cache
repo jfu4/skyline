@@ -1,4 +1,4 @@
-25350753519719368
+25364851848650174
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -70846,6 +70846,13 @@ moko mk08a mk08b nRF52840 bluetooth low energy
 0
 60
 58
+PCM_marbastlib-various
+reversible_SW_MSK12C02-HB
+12V 50mA SMD toggle switch, available at LCSC/JLCPCB (C431541)
+switch toggle smd 
+0
+14
+4
 PCM_marbastlib-xp-alps
 SW_Alps_1.5u
 Footprint for Alps SKCx style switches
@@ -101955,9 +101962,58 @@ Jumper_solder
 2
 2
 reversible_skyline
+TP4056_reversible
+SOP, 8 Pin (https://ww2.minicircuits.com/case_style/XX112.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOP SO
+0
+22
+9
+reversible_skyline
+USB_C_Receptacle_HRO_TYPE-C-31-M-12_reversible
+USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf
+usb usb-c 2.0 pd
+0
+40
+17
+reversible_skyline
+designator_swapped_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder
+Diode SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
+diode handsolder
+0
+2
+2
+reversible_skyline
+nRF52840_holyiot_18010_HS_simple_reversible
+Module containing a nRF52840 and most passives and antenna, with only hand solderable pads
+holyiot 18010 nRF52840 bluetooth low energy 
+0
+74
+37
+reversible_skyline
 reversible_D_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 Diode SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
 diode handsolder
 0
 4
 2
+reversible_skyline
+reversible_Molex_Pico-EZmate_78171-0002_1x02-1MP_P1.20mm_Vertical
+Molex Pico-EZmate series connector, 78171-0002 (http://www.molex.com/pdm_docs/sd/781710002_sd.pdf)
+connector Molex Pico-EZmate side entry
+0
+16
+3
+reversible_skyline
+reversible_SW_SPST_SKQG_WithStem
+ALPS 5.2mm Square Low-profile Type (Surface Mount) SKQG Series, With stem, http://www.alps.com/prod/info/E/HTML/Tact/SurfaceMount/SKQG/SKQGAFE010.html
+SPST Button Switch
+0
+8
+2
+reversible_skyline
+reversible_nRF52840_holyiot_18010
+Module containing a nRF52840 and most passives and antenna
+holyiot 18010 nRF52840 bluetooth low energy 
+0
+110
+55
