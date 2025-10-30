@@ -1,4 +1,11 @@
-25364851848650174
+25370138014180283
+490107670612
+wurth_6_pin_SKEDD
+
+
+0
+6
+6
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -101962,6 +101969,13 @@ Jumper_solder
 2
 2
 reversible_skyline
+SW_MX_Reversible_1u_3d
+Reversible footprint for Cherry MX style switches
+cherry mx switch
+0
+4
+2
+reversible_skyline
 TP4056_reversible
 SOP, 8 Pin (https://ww2.minicircuits.com/case_style/XX112.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOP SO
@@ -101982,6 +101996,13 @@ diode handsolder
 0
 2
 2
+reversible_skyline
+mounting_hole_npth
+
+
+0
+0
+0
 reversible_skyline
 nRF52840_holyiot_18010_HS_simple_reversible
 Module containing a nRF52840 and most passives and antenna, with only hand solderable pads
